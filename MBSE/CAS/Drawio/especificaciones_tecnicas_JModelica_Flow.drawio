@@ -1,0 +1,91 @@
+<mxfile host="Electron">
+  <diagram name="Especificaciones Técnicas - JModelica-Flow" id="vb56uEn8LVZhr7LhfIVy">
+    <mxGraphModel dx="860" dy="531" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="9dhFhsiPX3KU6t1QtFho-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0f172a;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="80" width="1520" x="40" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9dhFhsiPX3KU6t1QtFho-2" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=22;fontStyle=1;fontColor=#ffffff;" value="ESPECIFICACIONES TÉCNICAS E INGENIERÍA DE REQUISITOS" vertex="1">
+          <mxGeometry height="30" width="1480" x="60" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="9dhFhsiPX3KU6t1QtFho-3" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontColor=#94a3b8;" value="PROYECTO COMPLEMENTARIO: JModelica-Flow — Interfaz Visual Low-Code para Modelado Dinámico y Monitoreo" vertex="1">
+          <mxGeometry height="20" width="1480" x="60" y="72" as="geometry" />
+        </mxCell>
+        <mxCell id="9dhFhsiPX3KU6t1QtFho-4" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fillColor=#f8fafc;strokeColor=#0284c7;strokeWidth=2;fontStyle=1;fontSize=14;fontColor=#0369a1;" value="1. REQUISITOS FUNCIONALES (RF)" vertex="1">
+          <mxGeometry height="420" width="480" x="40" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="9dhFhsiPX3KU6t1QtFho-5" parent="9dhFhsiPX3KU6t1QtFho-4" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0f9ff;strokeColor=#bae6fd;align=left;spacingLeft=10;fontSize=11;verticalAlign=top;spacingTop=8;" value="&lt;b&gt;RF-01: Lienzo Visual Drag-and-Drop&lt;/b&gt;&lt;br&gt;• Arrastre y conexión visual de bloques físicos.&lt;br&gt;• Biblioteca libre (tanques H2, celdas, convertidores DC/DC, rotores)." vertex="1">
+          <mxGeometry height="75" width="440" x="20" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="9dhFhsiPX3KU6t1QtFho-6" parent="9dhFhsiPX3KU6t1QtFho-4" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0f9ff;strokeColor=#bae6fd;align=left;spacingLeft=10;fontSize=11;verticalAlign=top;spacingTop=8;" value="&lt;b&gt;RF-02: Binding Reactivo en Tiempo Real&lt;/b&gt;&lt;br&gt;• Modificación de parámetros (presión H2, carga de batería) con sliders/dials.&lt;br&gt;• Sincronización continua de variables sin reiniciar el kernel." vertex="1">
+          <mxGeometry height="75" width="440" x="20" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="9dhFhsiPX3KU6t1QtFho-7" parent="9dhFhsiPX3KU6t1QtFho-4" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0f9ff;strokeColor=#bae6fd;align=left;spacingLeft=10;fontSize=11;verticalAlign=top;spacingTop=8;" value="&lt;b&gt;RF-03: Compilación Automática a PyJMI&lt;/b&gt;&lt;br&gt;• Generación automática de scripts de ejecución en Python (pyjmi).&lt;br&gt;• Traducción transparente del diagrama visual a código ejecutable." vertex="1">
+          <mxGeometry height="75" width="440" x="20" y="215" as="geometry" />
+        </mxCell>
+        <mxCell id="9dhFhsiPX3KU6t1QtFho-8" parent="9dhFhsiPX3KU6t1QtFho-4" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0f9ff;strokeColor=#bae6fd;align=left;spacingLeft=10;fontSize=11;verticalAlign=top;spacingTop=8;" value="&lt;b&gt;RF-04: Dashboard No-Code Integrado&lt;/b&gt;&lt;br&gt;• Visualizadores gráficos e indicadores térmicos y eléctricos.&lt;br&gt;• Generación instantánea de gráficas Plotly (consumo vs. autonomía)." vertex="1">
+          <mxGeometry height="75" width="440" x="20" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="9dhFhsiPX3KU6t1QtFho-9" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fillColor=#f8fafc;strokeColor=#059669;strokeWidth=2;fontStyle=1;fontSize=14;fontColor=#047857;" value="2. REQUISITOS NO FUNCIONALES (RNF)" vertex="1">
+          <mxGeometry height="420" width="480" x="560" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="9dhFhsiPX3KU6t1QtFho-10" parent="9dhFhsiPX3KU6t1QtFho-9" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ecfdf5;strokeColor=#a7f3d0;align=left;spacingLeft=10;fontSize=11;verticalAlign=top;spacingTop=8;" value="&lt;b&gt;RNF-01: Reactividad de Baja Latencia&lt;/b&gt;&lt;br&gt;• Sincronización de estado instantánea basada en patrón Genie/Stipple.&lt;br&gt;• Actualización de gráficos sin retardo apreciable para la UI." vertex="1">
+          <mxGeometry height="75" width="440" x="20" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="9dhFhsiPX3KU6t1QtFho-11" parent="9dhFhsiPX3KU6t1QtFho-9" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ecfdf5;strokeColor=#a7f3d0;align=left;spacingLeft=10;fontSize=11;verticalAlign=top;spacingTop=8;" value="&lt;b&gt;RNF-02: Usabilidad Low-Code / No-Code&lt;/b&gt;&lt;br&gt;• Abstracción del código Python/pyjmi para usuarios no programadores.&lt;br&gt;• Interfaz intuitiva inspirada en motores de flujo de nodos." vertex="1">
+          <mxGeometry height="75" width="440" x="20" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="9dhFhsiPX3KU6t1QtFho-12" parent="9dhFhsiPX3KU6t1QtFho-9" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ecfdf5;strokeColor=#a7f3d0;align=left;spacingLeft=10;fontSize=11;verticalAlign=top;spacingTop=8;" value="&lt;b&gt;RNF-03: Modularidad de Biblioteca de Componentes&lt;/b&gt;&lt;br&gt;• Arquitectura extensible para añadir bloques dinámicos personalizados.&amp;br&gt;• Soporte nativo para sistemas de propulsión eléctrica e hidrógeno." vertex="1">
+          <mxGeometry height="75" width="440" x="20" y="215" as="geometry" />
+        </mxCell>
+        <mxCell id="9dhFhsiPX3KU6t1QtFho-13" parent="9dhFhsiPX3KU6t1QtFho-9" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ecfdf5;strokeColor=#a7f3d0;align=left;spacingLeft=10;fontSize=11;verticalAlign=top;spacingTop=8;" value="&lt;b&gt;RNF-04: Portabilidad y Licencia Libre&lt;/b&gt;&lt;br&gt;• Núcleo 100% Open-Source desplegable en entono local o servidor web.&amp;br&gt;• Compatibilidad directa con scripts JModelica estándar." vertex="1">
+          <mxGeometry height="75" width="440" x="20" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="9dhFhsiPX3KU6t1QtFho-14" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fillColor=#f8fafc;strokeColor=#7c3aed;strokeWidth=2;fontStyle=1;fontSize=14;fontColor=#5b21b6;" value="3. ARQUITECTURA TÉCNICA LOW-CODE" vertex="1">
+          <mxGeometry height="420" width="480" x="1080" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="9dhFhsiPX3KU6t1QtFho-15" parent="9dhFhsiPX3KU6t1QtFho-14" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f3ff;strokeColor=#ddd6fe;align=left;spacingLeft=10;fontSize=11;verticalAlign=top;spacingTop=8;" value="&lt;b&gt;Frontend Canvas UI (Lienzo Visual)&lt;/b&gt;&lt;br&gt;• Web-Canvas basado en Vue.js / Node-RED Engine.&lt;br&gt;• Componentes visuales interactivos y paneles de control." vertex="1">
+          <mxGeometry height="75" width="440" x="20" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="9dhFhsiPX3KU6t1QtFho-16" parent="9dhFhsiPX3KU6t1QtFho-14" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f3ff;strokeColor=#ddd6fe;align=left;spacingLeft=10;fontSize=11;verticalAlign=top;spacingTop=8;" value="&lt;b&gt;Gestor de Estado Reactivo (State Manager)&lt;/b&gt;&lt;br&gt;• JModelica Model State Manager (`@app` equivalente).&lt;br&gt;• Sincronización bi-direccional de flujo H2, voltajes y estados." vertex="1">
+          <mxGeometry height="75" width="440" x="20" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="9dhFhsiPX3KU6t1QtFho-17" parent="9dhFhsiPX3KU6t1QtFho-14" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f3ff;strokeColor=#ddd6fe;align=left;spacingLeft=10;fontSize=11;verticalAlign=top;spacingTop=8;" value="&lt;b&gt;Motor de Generación y Ejecución (Backend)&lt;/b&gt;&lt;br&gt;• Generador automático de código Python (`pyjmi`).&lt;br&gt;• Kernel de ejecución dinámico JModelica." vertex="1">
+          <mxGeometry height="75" width="440" x="20" y="215" as="geometry" />
+        </mxCell>
+        <mxCell id="9dhFhsiPX3KU6t1QtFho-18" parent="9dhFhsiPX3KU6t1QtFho-14" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f3ff;strokeColor=#ddd6fe;align=left;spacingLeft=10;fontSize=11;verticalAlign=top;spacingTop=8;" value="&lt;b&gt;Capa de Gráficos y Dashboards&lt;/b&gt;&lt;br&gt;• Auto-Generated Plotly Charts.&lt;br&gt;• Widgets de monitoreo térmico, eléctrico y autonomía." vertex="1">
+          <mxGeometry height="75" width="440" x="20" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="9dhFhsiPX3KU6t1QtFho-19" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fillColor=#f8fafc;strokeColor=#d97706;strokeWidth=2;fontStyle=1;fontSize=14;fontColor=#92400e;" value="4. FLUJO DE TRABAJO VISUAL (LOW-CODE WORKFLOW)" vertex="1">
+          <mxGeometry height="200" width="1520" x="40" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="9dhFhsiPX3KU6t1QtFho-20" parent="9dhFhsiPX3KU6t1QtFho-19" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fffbeb;strokeColor=#fde68a;fontSize=11;align=center;" value="&lt;b&gt;PASO 1: Drag-and-Drop&lt;/b&gt;&lt;br&gt;&lt;font size=&quot;1&quot;&gt;Arrastrar pila de H2, convertidor y rotor.&lt;br&gt;Conexión en el lienzo visual.&lt;/font&gt;" vertex="1">
+          <mxGeometry height="90" width="310" x="30" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="9dhFhsiPX3KU6t1QtFho-21" parent="9dhFhsiPX3KU6t1QtFho-19" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fffbeb;strokeColor=#fde68a;fontSize=11;align=center;" value="&lt;b&gt;PASO 2: Binding Reactivo&lt;/b&gt;&lt;br&gt;&lt;font size=&quot;1&quot;&gt;Ajuste de parámetros vía sliders.&lt;br&gt;Sincronización de estado en tiempo real.&lt;/font&gt;" vertex="1">
+          <mxGeometry height="90" width="310" x="410" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="9dhFhsiPX3KU6t1QtFho-22" parent="9dhFhsiPX3KU6t1QtFho-19" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fffbeb;strokeColor=#fde68a;fontSize=11;align=center;" value="&lt;b&gt;PASO 3: Generación PyJMI&lt;/b&gt;&lt;br&gt;&lt;font size=&quot;1&quot;&gt;Compilación automática en segundo plano.&lt;br&gt;Ejecución de simulación con pyjmi.&lt;/font&gt;" vertex="1">
+          <mxGeometry height="90" width="310" x="790" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="9dhFhsiPX3KU6t1QtFho-23" parent="9dhFhsiPX3KU6t1QtFho-19" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fffbeb;strokeColor=#fde68a;fontSize=11;align=center;" value="&lt;b&gt;PASO 4: Dashboard Plotly&lt;/b&gt;&lt;br&gt;&lt;font size=&quot;1&quot;&gt;Visualización instantánea de consumo.&lt;br&gt;Monitoreo térmico/eléctrico en tiempo real.&lt;/font&gt;" vertex="1">
+          <mxGeometry height="90" width="310" x="1170" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="9dhFhsiPX3KU6t1QtFho-24" edge="1" parent="9dhFhsiPX3KU6t1QtFho-19" source="9dhFhsiPX3KU6t1QtFho-20" style="endArrow=classic;html=1;strokeWidth=3;strokeColor=#d97706;" target="9dhFhsiPX3KU6t1QtFho-21" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="9dhFhsiPX3KU6t1QtFho-25" edge="1" parent="9dhFhsiPX3KU6t1QtFho-19" source="9dhFhsiPX3KU6t1QtFho-21" style="endArrow=classic;html=1;strokeWidth=3;strokeColor=#d97706;" target="9dhFhsiPX3KU6t1QtFho-22" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="9dhFhsiPX3KU6t1QtFho-26" edge="1" parent="9dhFhsiPX3KU6t1QtFho-19" source="9dhFhsiPX3KU6t1QtFho-22" style="endArrow=classic;html=1;strokeWidth=3;strokeColor=#d97706;" target="9dhFhsiPX3KU6t1QtFho-23" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="9dhFhsiPX3KU6t1QtFho-27" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f1f5f9;strokeColor=#cbd5e1;fontSize=11;fontColor=#64748b;fontStyle=2;align=center;" value="Modelado Dinámico de Hidrógeno y Vehículos • Integración PyJMI • Framework Low-Code / Genie-Stipple Inspired" vertex="1">
+          <mxGeometry height="40" width="1520" x="40" y="810" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
